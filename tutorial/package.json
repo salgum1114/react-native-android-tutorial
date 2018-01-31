@@ -1,0 +1,43 @@
+{
+  "name": "tutorial",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "server": "set NODE_ENV=development&&nodemon --exec babel-node --presets es2017 ./server/server.js --watch ./server",
+    "build:server": "set NODE_ENV=production&&node ./dist/server.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "immutability-helper": "^2.6.4",
+    "path": "^0.12.7",
+    "prop-types": "^15.6.0",
+    "react": "16.2.0",
+    "react-native": "0.52.0",
+    "react-native-elements": "^0.19.0",
+    "react-native-material-ui": "^1.19.0",
+    "react-native-vector-icons": "^4.5.0",
+    "react-redux": "^5.0.6",
+    "react-router-native": "^4.2.0",
+    "redux": "^3.7.2",
+    "redux-actions": "^2.2.1",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-jest": "22.0.6",
+    "babel-plugin-import": "^1.6.3",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-react-native": "4.0.0",
+    "jest": "22.0.6",
+    "nodemon": "^1.14.11",
+    "react-test-renderer": "16.2.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
